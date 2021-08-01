@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Family Book - Project 78</title>
+        <script language="javascript">
+            var familyname = [
+                "Sailaja Rachapudi (my mom)",
+                "Krishna Grandhi (my dad)",
+                "Sowbhagyavathi Rachapudi (my grandma) and Venkatesham Rachapudi (my grandpa)",
+                "Subamma Grandhi (my grandma)",
+                "Jyothi Munugur (my aunt)",
+                "Shreya Grandhi (my cousin)"
+            ];
+
+            var pictures = [
+
+                "mommy's pic.jpg",
+                "daddy's pic.jpg",
+                "avva and thatha's pic.jpg",
+                "nanamma's mic.JPG",
+                "peddamma's pic.jpg",
+                "shreya akka's image.jpg"
+            ];
+
+            var i = 0;
+            
+            function NextSlide(){
+                
+                document.getElementById("album").src = pictures[i];
+
+                document.getElementById("aboutpic").innerHTML = familyname[i];
+            
+                i++;
+            }
+
+        </script>
+    </head>
+    <body>
+        <center>
+            <h1>My Family</h1>
+            <br><br>
+            
+            <img style ="height:500px;" id="album" src="https://i.pinimg.com/564x/4f/8a/58/4f8a588da4f879ed5fe0c4b5187542a4.jpg">
+            
+            <br>
+            <button type="button" onclick="NextSlide()"> Next Page </button>
+            <p id ="aboutpic">...</p>
+        </center>
+    </body>
+</html>
